@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karteikarten App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Karteikarten App</h1>
+        
+        <div class="card">
+            <div id="question">Frage wird hier angezeigt</div>
+            <div id="answer" class="hidden">Antwort wird hier angezeigt</div>
+        </div>
+
+        <div class="buttons">
+            <button onclick="prevCard()">⏪ Zurück</button>
+            <button onclick="showAnswer()">👁️ Antwort zeigen</button>
+            <button onclick="nextCard()">⏩ Weiter</button>
+        </div>
+
+        <h2>Neue Karte hinzufügen:</h2>
+        <input type="text" id="newQuestion" placeholder="Frage eingeben">
+        <input type="text" id="newAnswer" placeholder="Antwort eingeben">
+        <button onclick="addCard()">➕ Hinzufügen</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
